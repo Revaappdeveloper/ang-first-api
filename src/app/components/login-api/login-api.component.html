@@ -1,0 +1,51 @@
+<div class="form-container">
+    <form class="form-signin">
+        <img class="mb-4" src="assets/images/bootstrap-solid.svg" width="72" height="72">
+        <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+        <div>
+            <br>
+            <input id="input" class="extend-width" type="text" size="30" pInputText [(ngModel)]="loginCredentials.username" name="username">
+
+            <br>
+            <br>
+            <input type="password" class="extend-width" pPassword [(ngModel)]="loginCredentials.password" name="password" />
+
+
+            <br>
+            <div>
+                <!-- <div class="ui-g-12 ui-md-4 extend-width">Login Date
+
+                    <p-calendar [showIcon]="true" [(ngModel)]="loginCredentials.loginDate" name="date"></p-calendar>
+                    <br> Time
+                    <br>
+
+                    <p-calendar [timeOnly]="true" [(ngModel)]="loginCredentials.loginTime" name="time"></p-calendar>
+                </div>
+                <br> -->
+
+            </div>
+            <br>
+            <div><button pButton type="button" label="Click to Get" class="ui-button-raised btn-align-center" (click)="getData()"></button></div>
+
+            <br>
+            <div> <button pButton type="button" label="Click to Put" class="ui-button-raised btn-align-center" (click)="putData()"></button></div>
+            <br>
+            <div>
+                <button pButton type="button" label="Click to Post" class="ui-button-raised btn-align-center" (click)="postData()"></button></div>
+            <br>
+            <div>
+                <button pButton type="button" label="Click to Delete" class="ui-button-raised ui-button-danger btn-align-center" (click)="deleteData()"></button></div>
+            <br>
+            <div>
+                <button pButton type="button" label="Newly Posted" class="ui-button-raised ui-button-secondary btn-align-center" (click)="newData()"></button>
+            </div>
+
+
+        </div>
+        <p class="mt-5 mb-3 text-muted">&copy; 2017-2019</p>
+
+
+    </form>
+
+
+</div>
